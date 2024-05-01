@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.detail {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .container {
+    min-height: 630px;
+    justify-content: space-between;
+  }
+
+  .detail {
+    &__container {
+      width: 320px;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 0;
+    }
+  }
+}

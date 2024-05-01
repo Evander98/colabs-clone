@@ -1,0 +1,26 @@
+#root {
+  padding: 0 10px;
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1025px) {
+  #root {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  @media (max-width: 1024px) {
+    #root {
+      padding: 0 20px;
+    }
+  }
+}
