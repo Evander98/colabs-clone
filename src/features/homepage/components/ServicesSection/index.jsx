@@ -1,7 +1,6 @@
 import { CardWithArrow } from "../../../../components/Cards/CardWithArrow";
 import { Carousel } from "../../../../components/Carousel";
 import styles from "./ServicesSection.module.scss";
-import Slider from "react-slick";
 
 const data = [
   {
