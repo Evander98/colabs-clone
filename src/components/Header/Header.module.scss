@@ -1,7 +1,6 @@
 .top-bar {
   background-color: white;
   height: 10px;
-  width: calc(100% - 80px);
   display: none;
   z-index: 100;
 }
@@ -86,6 +85,8 @@
     display: block;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
   }
 
   .logo {

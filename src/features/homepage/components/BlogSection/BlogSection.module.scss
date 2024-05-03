@@ -1,6 +1,8 @@
 .container {
   padding: 40px 0;
+}
 
+.wrapper {
   .item {
     color: white;
     font-size: 22px;
@@ -21,6 +23,37 @@
     }
   }
 }
+
+.blog {
+  &__card {
+    overflow: hidden;
+    display: flex;
+    border-radius: 30px 30px 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-desc {
+    border-radius: 0 0 30px 30px;
+    background-color: #eaf1fc;
+    padding: 20px 20px 80px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    &__desc {
+      font-size: 18px;
+    }
+  }
+}
+
 .img {
   width: 100%;
   border-radius: 0;
@@ -34,6 +67,9 @@
 @media only screen and (min-width: 501px) {
   .container {
     padding: 80px 0;
+  }
+
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -52,6 +88,27 @@
   .rounded {
     border-radius: 50%;
     width: 60%;
+  }
+
+  .blog {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 6fr 4fr;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    &__card {
+      border-radius: 30px;
+    }
+    &__card-desc {
+      border-radius: 30px;
+      &__title {
+        font-size: 32px;
+      }
+      &__desc {
+        font-size: 22px;
+      }
+    }
   }
 
   @media (max-width: 1024px) {

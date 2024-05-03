@@ -31,20 +31,41 @@ const data = [
 export const BlogSection = () => {
   return (
     <div className={styles.container}>
-      {data.map(({ image, label }) => (
-        <CardWithArrow
-          key={label}
-          className={styles.item}
-          style={{ backgroundColor: image.backgroundColor }}
-        >
-          <p>{label}</p>
+      <div className={styles.wrapper}>
+        {data.map(({ image, label }) => (
+          <CardWithArrow
+            key={label}
+            className={styles.item}
+            style={{ backgroundColor: image.backgroundColor }}
+          >
+            <p>{label}</p>
+            <img
+              src={image.url}
+              alt={label}
+              className={image.isRounded ? styles.rounded : styles.img}
+            />
+          </CardWithArrow>
+        ))}
+      </div>
+      <div className={styles["blog__wrapper"]}>
+        <div className={styles["blog__card"]}>
           <img
-            src={image.url}
-            alt={label}
-            className={image.isRounded ? styles.rounded : styles.img}
+            src="https://colabs.com.au/_next/image?url=https%3A%2F%2Fcolabs.yourcreative.com.au%2Fwp-content%2Fuploads%2F2023%2F07%2F3-horizons-.png&w=3840&q=75"
+            alt="blog-img"
+            className={`${styles.img} `}
           />
+        </div>
+        <CardWithArrow className={styles["blog__card-desc"]}>
+          <p className="pill">Beyond the bench</p>
+          <p className={styles["blog__card-desc__title"]}>
+            What are the 3 Horizons of Transformative Innovation?
+          </p>
+          <p className={styles["blog__card-desc__desc"]}>
+            ‘Three Horizons thinking’ is a useful method for making sense of and
+            facilitating transformative innovation.
+          </p>
         </CardWithArrow>
-      ))}
+      </div>
     </div>
   );
 };
