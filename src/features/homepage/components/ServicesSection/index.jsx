@@ -31,7 +31,7 @@ const data = [
 
 export const ServicesSection = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <p className={`headline--md ${styles.title}`}>
         We design, build and run collaborative spaces where bio-led science,
         technology and people can thrive

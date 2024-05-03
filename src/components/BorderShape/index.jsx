@@ -1,5 +1,3 @@
-import React from "react";
-
 function BorderShape({ size, fill, ...props }) {
   return (
     <svg

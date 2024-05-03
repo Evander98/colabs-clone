@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Hero.module.scss";
 import BorderShape from "../BorderShape";
 import { ButtonIcon } from "../Button/ButtonIcon";

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import styles from "./Search.module.scss";
+import { useState } from "react";
 import { PiMagnifyingGlassLight } from "react-icons/pi";
+import styles from "./Search.module.scss";
 
 export const Search = ({ className = "", hidden, show, ...props }) => {
   const [isOpen, setIsOpen] = useState(false);
