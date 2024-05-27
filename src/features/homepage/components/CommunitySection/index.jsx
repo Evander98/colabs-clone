@@ -37,7 +37,7 @@ const data = [
 export const CommunitySection = () => {
   return (
     <section className={styles.container}>
-      <p className={`${styles.title} headline--md`}>
+      <p className={styles.title}>
         Space for big thinking, problem-solvers and bio-innovators
       </p>
       <div className={styles["content__wrapper"]}>

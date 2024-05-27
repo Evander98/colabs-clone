@@ -1,0 +1,57 @@
+.container {
+  padding: 40px 0;
+}
+
+.title {
+  margin-bottom: 40px;
+  max-width: 860px;
+  font-size: clamp(1.75rem, 1.182rem + 1.82vw, 3rem);
+  font-weight: 600;
+}
+
+.content {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .content {
+    &__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .container {
+    padding: 80px 40px;
+  }
+
+  .title {
+    margin-bottom: 80px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      padding: 80px 0;
+    }
+  }
+}

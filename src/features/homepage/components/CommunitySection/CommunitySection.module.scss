@@ -3,7 +3,7 @@
 }
 
 .title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   max-width: 860px;
 }
 
@@ -64,6 +64,11 @@
   .container {
     padding: 80px 40px;
   }
+
+  .title {
+    margin-bottom: 80px;
+  }
+
   .card-content {
     &__wrapper {
       gap: 10px;
